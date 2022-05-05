@@ -1,0 +1,4 @@
+select PRODUCT_NAME, sum(AMOUNT)
+FROM ORDERS
+group by PRODUCT_NAME
+order by PRODUCT_NAME

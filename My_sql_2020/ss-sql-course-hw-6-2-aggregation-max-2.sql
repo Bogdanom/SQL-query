@@ -1,0 +1,4 @@
+select PRODUCT_NAME, PRODUCT_PRICE 
+FROM ORDERS
+where PRODUCT_PRICE=(select max(PRODUCT_PRICE) from orders)
+order by PRODUCT_NAME 
